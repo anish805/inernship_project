@@ -1,0 +1,118 @@
+.section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .section-header h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-align:center 50px;
+    }
+
+    .section-header h2 span {
+      color: green;
+      background: #e1f5e1;
+      padding: 0 5px;
+      border-radius: 5px;
+    }
+
+    .view-all-btn {
+      background: black;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .swiper {
+      padding: 10px 0;
+      position: relative;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+      border-radius: 15px;
+      position: relative;
+      color: white;
+      height: 300px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 2rem;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .swiper-slide::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+      z-index: 0;
+    }
+
+    .swiper-slide:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .swiper-slide h3,
+    .swiper-slide p,
+    .swiper-slide small {
+      z-index: 1;
+      margin: 0;
+    }
+
+    .swiper-slide h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .swiper-slide p {
+      font-size: 1.1rem;
+      margin: 5px 0;
+    }
+
+    .swiper-slide small {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    /* Custom Swiper Buttons */
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 32px;
+      height: 32px;
+      background: white;
+      color: black;
+      border-radius: 5%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      top: 50%;
+      transform: translateY(-30%);
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .swiper-button-next {
+      right: 6px;
+    }
+
+    .swiper-button-prev {
+      left: 6px;
+    }
+
+    @media (max-width: 768px) {
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: none;
+      }
+    }

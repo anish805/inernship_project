@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+     <link rel="stylesheet" href="nav.css">
+     <link rel="stylesheet" href="baground.css">
+     <link rel="stylesheet" href="feature.css">
+     <link rel="stylesheet" href="adventure.css">
+     <link rel="stylesheet" href="desc.css">
+     <link rel="stylesheet" href="review.css">
+     <link rel="stylesheet" href="backtotop.css">
+     <link rel="stylesheet" href="fotoor.css">
+     <link rel="stylesheet" href="services.css">
+     <link rel="stylesheet" href="hote.css">
+     <link rel="stylesheet" href="floating.css">
+     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     
+     
+      <!-- Swiper CSS of international-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <!-- AOS CSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/> -->
+  <link rel="stylesheet" href="inernationl.css">
+  <!-- Swiper CSS of international-->
+   <!-- next tripcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.3/vanilla-tilt.min.js"></script>
+  <link rel="stylesheet" href="nexttrip.css">
+
+
+
+    <title>web</title>
+</head>
+<body>
+     <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-black">Namrata</span><span class="logo-green">Universal</span>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">All Packages</a></li>
+      <li class="dropdown">
+        <a href="#">Destinations ▾</a>
+        <div class="dropdown-content">
+          <a href="#">Europe</a>
+          <a href="#">Asia</a>
+          <a href="#">America</a>
+        </div>
+      </li>
+      <li><a href="#">About</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="conntact.html">contact us</a></li>
+      <li class="mobile-login" ><button class="login-btn"  >Login</button></li>
+    </ul>
+
+    <button class="login-btn desktop-login">Login</button>
+  </nav>
+   <!----------------- baground ....................... -->
+<section>
+    <div class="hero">
+    <div class="hero-content">
+      <h1>Air, sleep, dream</h1>
+      <p>Find and book a great experience.</p>
+      <button onclick="alert('Search started!')">Start your search</button>
+    </div>
+  </div>
+
+  <div class="search-bar-wrapper">
+    <div class="search-bar">
+      <div class="tabs">
+        <div class="tab active">Stays</div>
+        <div class="tab">Flights</div>
+        <div class="tab">Cars</div>
+        <div class="tab">Things to do</div>
+      </div>
+      <div class="search-fields">
+        <div class="field">
+          <label>Choose a destination</label>
+          <input type="text" placeholder="Where are you going?" />
+        </div>
+        <div class="field">
+          <label>Check in</label>
+          <input type="date" />
+        </div>
+        <div class="field">
+          <label>Check out</label>
+          <input type="date" />
+        </div>
+        <div class="field">
+          <label>Travelers</label>
+          <input type="text" placeholder="Add guests" />
+        </div>
+        <button class="search-btn" title="Search">🔍</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- international pkg-------------- -->
+ <div class="section-header">
+    <h2>Popular <span>International</span> Packages</h2>
+    <button class="view-all-btn">View All (200+)</button>
+  </div>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper" data-aos="fade-up" data-aos-duration="1000">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image: url(image/dubai.jpg);" data-aos="zoom-in" data-aos-delay="100">
+        <small>100+ Packages</small>
+        <h3>Dubai</h3>
+        <p>₹10,000 onwards</p>
+      </div>
+      <div class="swiper-slide" style="background-image: url(image/europe.jpg);" data-aos="zoom-in" data-aos-delay="200">
+        <small>150+ Packages</small>
+        <h3>Europe</h3>
+        <p>₹12,000 onwards</p>
+      </div>
+      <div class="swiper-slide" style="background-image: url(image/thailand.jpg);" data-aos="zoom-in" data-aos-delay="300">
+        <small>90+ Packages</small>
+        <h3>Thailand</h3>
+        <p>₹8,000 onwards</p>
+      </div>
+      <div class="swiper-slide" style="background-image: url(image/maldive.jpg);" data-aos="zoom-in" data-aos-delay="400">
+        <small>120+ Packages</small>
+        <h3>Maldives</h3>
+        <p>₹16,000 onwards</p>
+      </div>
+    </div>
+<!-- Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <!-- -------------------------------------feature section--------------------------------------- -->
+   <section class="feature-section">
+    <h2 class="feature-heading">Our best feature</h2>
+    <p class="feature-subheading">for the customer who believe in us</p>
+
+    <div class="features">
+      <div class="feature-card">
+        <div class="feature-number">01</div>
+        <h3>Tour guide</h3>
+        <p>Our best feature<br>for the customer who believe</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-number">02</div>
+        <h3>Reliable tour</h3>
+        <p>Our best feature<br>for the customer who believe</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-number">03</div>
+        <h3>Friendly price</h3>
+        <p>Our best feature<br>for the customer who believe</p>
+      </div>
+    </div>
+  </section>
+  <!-- nexttrip section--------------- -->
+   
+  <!-- Header -->
+  <div class="mb-8 text-center" data-aos="fade-down">
+    <h1 class="text-3xl font-extrabold tracking-tight">
+      Dream <span class="text-green-600">Your Next Trip</span>
+    </h1>
+    <p class="text-md text-gray-600 mt-2">Travellers’ Choice: Most Visited Places</p>
+  </div>
+
+  <!-- Grid layout -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+    <!-- 2x2 grid -->
+    <div class="sm:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+      <!-- Travel Cards -->
+      <div class="tilt-card relative rounded-2xl overflow-hidden shadow-xl card group transition duration-500 hover:shadow-2xl" data-aos="fade-right">
+        <img src="image/ladak.jpg" alt="Ladakh" class="w-full h-full object-cover card-img">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+        <div class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow">Adventure</div>
+        <div class="absolute top-3 right-3 glass text-white text-xs px-2 py-1 rounded-lg shadow">
+          ₹10k - 20k<br><span class="text-[10px] text-gray-200">Onwards</span>
+        </div>
+        <div class="absolute bottom-3 left-3 text-white translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+          <h3 class="text-lg font-bold">Ladakh</h3>
+          <p class="text-xs opacity-80">4 Days & 3 Nights</p>
+        </div>
+      </div>
+
+      <div class="tilt-card relative rounded-2xl overflow-hidden shadow-xl card group transition duration-500 hover:shadow-2xl" data-aos="fade-left">
+        <img src="image/mountain.jpg" alt="Mauritius" class="w-full h-full object-cover card-img">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+        <div class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow">Adventure</div>
+        <div class="absolute top-3 right-3 glass text-white text-xs px-2 py-1 rounded-lg shadow">
+          ₹10k - 20k<br><span class="text-[10px] text-gray-200">Onwards</span>
+        </div>
+        <div class="absolute bottom-3 left-3 text-white translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+          <h3 class="text-lg font-bold">Mountain</h3>
+          <p class="text-xs opacity-80">4 Days & 3 Nights</p>
+        </div>
+      </div>
+
+      <div class="tilt-card relative rounded-2xl overflow-hidden shadow-xl card group transition duration-500 hover:shadow-2xl" data-aos="fade-right">
+        <img src="image/thailand.jpg" alt="Thailand" class="w-full h-full object-cover card-img">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+        <div class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow">Adventure</div>
+        <div class="absolute top-3 right-3 glass text-white text-xs px-2 py-1 rounded-lg shadow">
+          ₹10k - 20k<br><span class="text-[10px] text-gray-200">Onwards</span>
+        </div>
+        <div class="absolute bottom-3 left-3 text-white translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+          <h3 class="text-lg font-bold">Thailand</h3>
+          <p class="text-xs opacity-80">6 Days & 5 Nights</p>
+        </div>
+      </div>
+
+      <div class="tilt-card relative rounded-2xl overflow-hidden shadow-xl card group transition duration-500 hover:shadow-2xl" data-aos="fade-left">
+        <img src="image/bali.jpg" alt="Bali" class="w-full h-full object-cover card-img">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+        <div class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow">Adventure</div>
+        <div class="absolute top-3 right-3 glass text-white text-xs px-2 py-1 rounded-lg shadow">
+          ₹10k - 20k<br><span class="text-[10px] text-gray-200">Onwards</span>
+        </div>
+        <div class="absolute bottom-3 left-3 text-white translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+          <h3 class="text-lg font-bold">Bali, Indonesia</h3>
+          <p class="text-xs opacity-80">6 Days & 5 Nights</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Explore All Card -->
+    <div class="tilt-card relative rounded-2xl overflow-hidden shadow-xl group transition duration-500 hover:shadow-2xl h-[360px]" data-aos="zoom-in-up">
+      <img src="image/mountain (2).jpg" alt="Explore All" class="w-full h-full object-cover card-img">
+      <div class="absolute inset-0 bg-gradient-to-br from-black/70 to-transparent flex flex-col justify-center items-start p-6 space-y-4">
+        <h3 class="text-white text-2xl font-extrabold leading-snug">
+          Explore All <span class="text-orange-400">Adventure</span> Packages
+        </h3>
+        <button class="px-5 py-2 bg-white text-black font-semibold rounded-lg shadow hover:bg-orange-400 hover:text-white transition-all">
+          Explore All →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------advanture section----------- -->
+     <!-- 🔮 Motion Background -->
+      <section>
+  <div class="background-blobs">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+  </div>
+
+  <div class="section">
+    <!-- Image Left -->
+    <div class="left-content">
+      <div class="styled-image-container">
+        <img src="image/mountain (2).jpg" alt="Adventure image" />
+      </div>
+    </div>
+
+    <!-- Text Right -->
+    <div class="right-content">
+      <h1>ADVENTURES CAN FILL<br>YOUR SOUL</h1>
+      <p>
+        Travel is the movement of people between distant geographical locations.
+        Travel can be done by foot, bicycle. Travel is the movement of people.
+      </p>
+      <div class="circle-button-container">
+        <div class="circle-button" >IMAGE • DEMO • VIEW</div>
+        <div class="vertical-line"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <img src="hyundai-motor-group-bfLoXCRijvQ-unsplash copy.jpg" alt="Popup image" />
+    </div>
+  </div>
+  <!-- .........................UI descrip -->
+   <div class="container">
+    <!-- Image Block with Animation -->
+    <div class="image-wrapper" data-aos="zoom-in">
+      <img src="image/neom-wTmGtmGQCjQ-unsplash.jpg" alt="Travel" />
+      <div class="circle-text-overlay">
+        <svg viewBox="0 0 400 400">
+          <defs>
+            <path id="semiCirclePath" d="M200,200 m-180,0 a180,180 0 1,1 360,0" />
+          </defs>
+          <text font-size="14" letter-spacing="3" font-weight="500" fill="#333">
+            <textPath href="#semiCirclePath" startOffset="0%">
+              FIND THE BEST PLACE TO TRAVEL AND RELAX YOURSELF
+            </textPath>
+          </text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Text Block with Staggered Animation -->
+    <div class="text-content">
+      <h1 data-aos="fade-up" data-aos-delay="100">Travel is the movement of people between distant</h1>
+      <p data-aos="fade-up" data-aos-delay="200">
+        Travel is the movement of people between distant geographical locations. Travel can be done by foot, bicycle. Travel is the movement of people between distant geographical locations.
+      </p>
+      <p data-aos="fade-up" data-aos-delay="300">
+        Travel can be done by foot, bicycle. Travel is the movement of people between distant geographical locations.
+      </p>
+      <button class="cta-button" data-aos="fade-up" data-aos-delay="400">Explore Now</button>
+    </div>
+  </div>
+</section>
+<!-- hoteles section--------------- -->
+ <section>
+    <div class="section-title">
+      <h1>POPULAR HOTELS</h1>
+    <p>At URBAN TRAILS Provide Best Hotel Facility National And International</p>
+   </div>
+
+  <div class="hotel-section">
+
+    <div class="hotel-card">
+      <img src="image/1.avif" alt="Taj Aravali">
+      <div class="hotel-info">
+        <div class="hotel-title">Taj Aravali Resort & Spa</div>
+        <div class="hotel-description">“A blend of tradition, luxury, and nature – discover the soul of Udaipur at Taj Aravali Resort & Spa.”</div>
+        <div class="price">₹12999+ / night</div>
+        <button class="book-btn" onclick="bookNow('Taj Aravali Resort & Spa')">Book Now</button>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img src="image/2.avif" alt="Hideout Premiere">
+      <div class="hotel-info">
+        <div class="hotel-title">Hideout Premiere</div>
+        <div class="hotel-description">“Modern comfort meets urban convenience at Hideout Premiere  your perfect city stay.”</div>
+        <div class="price">₹10999+ / night</div>
+        <button class="book-btn" onclick="bookNow('Hideout Premiere')">Book Now</button>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img src="image/6.avif" alt="Hideout Premiere">
+      <div class="hotel-info">
+        <div class="hotel-title">Taj Lake Palace</div>
+        <div class="hotel-description">“Your premium city escape  unwind in elegance at Hideout Premiere good for that.”</div>
+        <div class="price">₹10999+ / night</div>
+        <button class="book-btn" onclick="bookNow('Hideout Premiere')">Book Now</button>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img src="image/5.avif" alt="Hideout Premiere">
+      <div class="hotel-info">
+        <div class="hotel-title">Hyatt Regency</div>
+        <div class="hotel-description">“Your premium city escape  unwind in elegance at Hideout Premiere good for that.”</div>
+        <div class="price">₹10999+ / night</div>
+        <button class="book-btn" onclick="bookNow('Hideout Premiere')">Book Now</button>
+      </div>
+    </div>
+
+
+</section>
+<!-- ------------------------services section---------- -->
+ <section class="services-container">
+        <div class="section-title">
+            <h1>OUR SERVICES</h1>
+            <p>At UrbanTrails, we are committed to ensuring that you save on every trip and every holiday booking you make with us by bringing to you the best price deals; be it flights, tours or hotels.</p>
+        </div>
+        
+        <div class="services-grid">
+            <!-- Service Card 1 -->
+            <div class="service-card">
+                <div class="card-header">
+                    <i class="fas fa-home service-icon"></i>
+                    <h2>UrbanTrails Homestays</h2>
+                    <h3>Book Villas, Apartments and Resorts</h3>
+                </div>
+                <div class="card-body">
+                    <p>UrbanTrails.com ventured into Homestays in India in 2025, and is providing great homestay experiences to its customers as well as benefits to its hosts. If you are looking for a holiday with a difference, want to closely savour the local flavours of a place...</p>
+                    <br>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Service Card 2 -->
+            <div class="service-card">
+                <div class="card-header">
+                    <i class="fas fa-hotel service-icon"></i>
+                    <h2>UrbanTrails Hotels</h2>
+                    <h3>Book Hotels with UrbanTrails.com</h3>
+                </div>
+                <div class="card-body">
+                    <p>We are back in the post-pandemic world with a bouquet of hotels across Indian cities ranging from leisure to business 
+                      ones with a new outlook. Jingle Holiday Bazar who has always been on the forefront of assuring a comfortable stay which is a bano for your bucks...</p>
+                      <br>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Service Card 3 -->
+            <div class="service-card">
+                <div class="card-header">
+                    <i class="fas fa-plane service-icon"></i>
+                    <h2>UrbanTrails</h2>
+                    <h3>Why to book Flights Online with Jingle Holiday Bazar.com</h3>
+                </div>
+                <div class="card-body">
+                    <p>Purchasing flight tickets and confirming your flight booking is the key aspect of planning a trip.
+                       Now whether you are travelling for business or on leisure, you cannot make an itinerary until you have first and foremost booked your
+                       ...</p>
+                       <br>
+                    <a href="#" class="read-more" style="margin-bottom: 30px;">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--   revew section of client--------------- -->
+   <section class="testimonial-section" data-aos="fade-up">
+    <h2 class="heading">Our best clients words</h2>
+    <div class="carousel" id="carousel">
+      <div class="card active">
+        <div class="quote">“</div>
+        <p>OMG! I cannot believe that I have got a brand new landing page after getting appmax. It was super easy to edit and publish.</p>
+        <div class="author">
+          <img src="https://i.pravatar.cc/50?img=1" alt="Client Photo" />
+          <div class="author-info">
+            <strong>raj Khurana</strong>
+            <span>Web Developer</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="quote">“</div>
+        <p>Absolutely wonderful! I love the way the carousel works. It's clean, elegant, and very user friendly!</p>
+        <div class="author">
+          <img src="https://i.pravatar.cc/50?img=2" alt="Client Photo" />
+          <div class="author-info">
+            <strong>Kishan</strong>
+            <span>Designer</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="quote">“</div>
+        <p>Easy to use, elegant, and effective. This testimonial section really helps build trust with our audience.</p>
+        <div class="author">
+          <img src="https://i.pravatar.cc/50?img=3" alt="Client Photo" />
+          <div class="author-info">
+            <strong>Mittal singh</strong>
+            <span>Startup Founder</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dots">
+      <span class="dot active" onclick="showSlide(0)"></span>
+      <span class="dot" onclick="showSlide(1)"></span>
+      <span class="dot" onclick="showSlide(2)"></span>
+    </div>
+  </section>
+
+
+     <!-- footor -->
+   <section>
+    <footer>
+  <div class="footer-container">
+
+    <!-- Column 1 -->
+    <div class="footer-column">
+      <div class="logo">
+      <span class="logo-black">Namrata</span><span class="logo-green">Universal</span>
+    </div>
+      <p>For Explorers Everywhere</p>
+
+      <h3>FOLLOW US</h3>
+      <div class="social-icons">
+        <a href="#"><img src="https://www.svgrepo.com/show/475647/facebook-color.svg" alt="Facebook" /></a>
+         <a href="#"><img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Insta" /></a>
+         <a href="#"><img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" alt="twitter" /></a> 
+         <a href="#"><img src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000" alt="youtube" /></a>
+      </div>
+   
+
+      <h3>SUBSCRIBE</h3>
+      <p><strong>Get 20% off your first order.</strong></p>
+      <div class="subscribe-box">
+        <input type="email" id="emailInput" placeholder="Email address" />
+        <button onclick="subscribe()">Subscribe now</button>
+          
+      </div>
+      <p class="footer-note">Subscribe to UrbanTrails newsletters and promotions. Read our <a href="#">Privacy Policy</a>.</p>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-column">
+      <h3>TOP DESTINATIONS</h3>
+      <ul>
+        <li>Andhra Pradesh</li>
+        <li>Paris</li>
+        <li>Delhi</li>
+        <li>Assam</li>
+        <li>Japan</li>
+        <li>Gujarat</li>
+        <li>Goa</li>
+        <li>Karnataka</li>
+        <li>Punjab</li>
+        
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-column">
+      <h3>TRAVEL INTERESTS</h3>
+      <ul>
+        <li>Adventure Travel</li>
+        <li>Art and Culture</li>
+        <li>Beaches, Coasts and Islands</li>
+        <li>Family Holidays</li>
+        <li>Festivals</li>
+        <li>Food and Drink</li>
+        <li>Honeymoon and Romance</li>
+        <li>Road Trips</li>
+        <li>Sustainable Travel</li>
+        <li>Travel on a Budget</li>
+        <li>Wildlife and Nature</li>
+      </ul>
+    </div>
+
+   
+
+    <!-- Column 5 -->
+    <div class="footer-column">
+      <h3>ABOUT US</h3>
+      <ul>
+        <li>About UrbanTrails</li>
+        <li>Contact Us</li>
+        <li>Trade and Advertising</li>
+        <li>Privacy Policy</li>
+        <li>Terms and Conditions</li>
+        <li>Work For Us</li>
+        <li>Write For Us</li>
+        <li>Sitemap</li>
+        <li>Consumer Health Data Privacy Policy</li>
+        <li>Cookie Settings</li>
+        <li>Do Not Sell or Share My Personal Information</li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+   </section>
+   <!-- ---------------------------------------------floating section ----------------->
+ 
+<!-- contact floating menu -->
+  <div class="contact-floating-menu">
+    <a href="mailto:example@gmail.com" class="contact-icon email" title="Gmail">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://wa.me/000000000000" class="contact-icon whatsapp" target="_blank" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="#enquiry-form" class="contact-icon enquiry" title="Enquiry">
+      <i class="fas fa-file-alt"></i>
+    </a>
+  </div>
+
+   <!------------------------------------------------ Back to Top Button -->
+  
+   <a href="#" id="backToTop" class="back-to-top">
+    <span>&uarr;</span> top
+  </a>
+<!-- ------------------------------------------------top to bottom section -->
+
+
+
+
+
+<!-- script------------------------------------------- -->
+    <script src="nav.js"></script>
+     <!-- AOS Script (optional here since we added CSS animations too) baground after nav logic -->
+   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script> AOS.init(); </script>
+
+  <!-- Swiper JS  of international-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- AOS JS -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> -->
+  <script src="internationl.js"></script>
+  <!-- Swiper JS  of international-->
+
+  <!-- fetures section js -->
+   <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="feature.js"></script>
+  <!-- nextsection js -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="next.js"></script>
+
+<!--   adventure js -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
+  <script src="adventure.js"></script>
+
+  <!-- advent descripion UI js -->
+   <!-- <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script> -->
+  <script src="desc.js"></script>
+
+  <!-- reviewjs section -->
+   
+   <!-- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> -->
+   <script src="footor.js"></script>
+   <script src="backtotop.js"></script>
+   <script src="hotl.js"></script>
+
+  
+</body>
+</html>

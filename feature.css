@@ -1,0 +1,82 @@
+.feature-section {
+      padding: 80px 20px;
+    }
+
+    .feature-heading {
+      font-size: 2.5em;
+      font-weight: 700;
+      margin: 0;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .feature-subheading {
+      font-size: 1.25em;
+      font-weight: 500;
+      color: #333;
+      margin: 10px 0 60px;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0;
+    }
+
+    .feature-card {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: white;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      opacity: 0;
+      transform: scale(0.8) translateY(40px);
+      margin-left: -20px;
+      margin-right: -20px;
+      z-index: 1;
+      position: relative;
+      transition: box-shadow 0.4s ease;
+    }
+
+    .feature-card h3 {
+      margin: 5px 0;
+      font-weight: 600;
+      font-size: 1.2em;
+    }
+
+    .feature-card p {
+      font-size: 0.9em;
+      color: #555;
+      margin: 0;
+    }
+
+    .feature-card .feature-number {
+      font-weight: 600;
+      color: #aaa;
+      font-size: 0.9em;
+      margin-bottom: 6px;
+    }
+
+    .feature-card:hover {
+      box-shadow: 0 0 30px rgba(0, 128, 255, 0.3);
+      z-index: 10;
+    }
+
+    /* Subtle floating animation */
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }

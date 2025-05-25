@@ -1,0 +1,25 @@
+/* back to bottom code */
+.back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 40px;
+      /* background-color: #fa4949; */
+      background-image: linear-gradient(to #2b9a42);
+      color: #161616;
+      padding: 10px 10px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      display: none;
+      align-items: center;
+      gap: 8px;
+      transition: opacity 0.3s ease;
+    }
+
+    .back-to-top span {
+      color: crimson;
+      font-size: 18px;
+    }
+
+

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us</title>
+
+  <!-- Animate.css CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e8f0ff, #f8faff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 24px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+      max-width: 1200px;
+      width: 100%;
+      gap: 40px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .left {
+      flex: 1;
+    }
+
+    .left h4 {
+      color: #dc5e32;
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .left h1 {
+      font-size: 32px;
+      color: #1b1d34;
+      margin-bottom: 20px;
+    }
+
+    .left h1 span {
+      color: #2447f9;
+    }
+
+    .left p {
+      font-size: 15px;
+      color: #5f6368;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .contact-card {
+      background: #f0f4ff;
+      padding: 20px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      transform: translateY(0);
+    }
+
+    .contact-card:hover {
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 10px 20px rgba(36, 71, 249, 0.2);
+    }
+
+    .contact-card .icon {
+      font-size: 28px;
+      color: #2447f9;
+      margin-bottom: 10px;
+    }
+
+    .contact-card h3 {
+      font-size: 17px;
+      color: #2b2b2b;
+      margin-bottom: 5px;
+    }
+
+    .contact-card p {
+      color: #8a8a8a;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .contact-card button {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 10px;
+      background-color: #e4e9f7;
+      color: #1e1e1e;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .contact-card button:hover {
+      background-color: #d5dcf3;
+      transform: scale(1.05);
+    }
+
+    .contact-card.chat button {
+      background-color: #2447f9;
+      color: #fff;
+    }
+
+    .contact-card.chat button:hover {
+      background-color: #1738cc;
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .rounded-image {
+      width: 100%;
+      max-width: 400px;
+      aspect-ratio: 4/5;
+      overflow: hidden;
+      border-radius: 200px 200px 0 0;
+      clip-path: ellipse(100% 100% at 50% 0%);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    .rounded-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .rounded-image {
+        margin-top: 30px;
+        clip-path: ellipse(90% 100% at 50% 0%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container animate__animated animate__fadeInUp">
+    <div class="left">
+      <h4>Contact Us</h4>
+      <h1>Easy to contact us<span>.</span></h1>
+      <p>Is there a problem finding your dream home? Need a guide in buying your first home? Or need a consultation on residential issues? Just contact us.</p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="icon"><i class="fas fa-phone-alt"></i></div>
+          <h3>Call</h3>
+          <p>021.123.145.14</p>
+          <button>Call Now</button>
+        </div>
+        <div class="contact-card chat">
+          <div class="icon"><i class="fas fa-comments"></i></div>
+          <h3>Chat</h3>
+          <p>021.123.145.14</p>
+          <button>Chat Now</button>
+        </div>
+        <div class="contact-card">
+          <div class="icon"><i class="fas fa-video"></i></div>
+          <h3>Video Call</h3>
+          <p>021.123.145.14</p>
+          <button>Video Call Now</button>
+        </div>
+        <div class="contact-card">
+          <div class="icon"><i class="fas fa-envelope"></i></div>
+          <h3>Message</h3>
+          <p>021.123.145.14</p>
+          <button>Message Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="rounded-image">
+        <img src="image/mountain (2).jpg" alt="Modern House">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

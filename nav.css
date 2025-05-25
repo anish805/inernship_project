@@ -1,0 +1,228 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9; /* Light default body background */
+      color: #222;
+    }
+
+    /* -----------------------------------------------Navbar ==============================*/
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background: linear-gradient(to right, #000000, #1a1a1a);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    .logo-black {
+      color: #eee;
+    }
+
+    .logo-green {
+      color: #2b9a42;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      position: relative;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: #2b9a42;
+      left: 0;
+      bottom: -4px;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #2b9a42;
+    }
+
+    .nav-links li a:hover::after {
+      width: 100%;
+    }
+
+    /* Dropdown */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 35px;
+      left: 0;
+      background-color: #222;
+      padding: 10px 0;
+      border-radius: 8px;
+      min-width: 160px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+      z-index: 999;
+    }
+
+    .dropdown-content a {
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #333;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Login Button */
+    .login-btn {
+      background-color: #2b9a42;
+      color: white;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 10px;
+      font-size: 15px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 0 rgba(43, 154, 66, 0);
+    }
+
+    .login-btn:hover {
+      background-color: #247c35;
+      box-shadow: 0 0 8px rgba(43, 154, 66, 0.4);
+      transform: translateY(-2px);
+    }
+
+    .desktop-login {
+      display: block;
+    }
+
+    .mobile-login {
+      display: none;
+    }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      transition: all 0.3s ease;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #111;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        display: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .desktop-login {
+        display: none;
+      }
+
+      .mobile-login {
+        display: block;
+      }
+    }
+    /* --------------------------------------foating menu css--------------------- */
+        /* Flotin menu css */
+    .contact-floating-menu {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 1000;
+}
+
+.contact-icon {
+  background: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 40px;
+  height: 35px;
+  line-height: 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-icon:hover {
+  transform: translateX(10px);
+  opacity: 0.9;
+}
+
+/* Custom background colors */
+.gmail { background: #db4437; 
+width: 70px;
+    }
+.call { background: #d32f2f; 
+width: 70px;}
+.whatsapp { background: #25d366; 
+
+width: 70px;}
+.enquiry {
+  background: black;
+  font-size: 12px;
+  padding: 8px;
+  height: auto;
+  line-height: normal;
+  width: 70px;
+}

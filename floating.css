@@ -1,0 +1,43 @@
+  /* Floating Menu - Bottom Left */
+    .contact-floating-menu {
+      position: fixed;
+      left: 20px;
+      bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 1000;
+    }
+
+    /* Icon Buttons */
+    .contact-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background-color: #444;
+      color: white;
+      border-radius: 50%;
+      font-size: 22px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .contact-icon:hover {
+      transform: scale(1.1);
+    }
+
+    /* Individual hover colors */
+    .contact-icon.email:hover {
+      background-color: #D44638; /* Gmail red */
+    }
+
+    .contact-icon.whatsapp:hover {
+      background-color: #25D366; /* WhatsApp green */
+    }
+
+    .contact-icon.enquiry:hover {
+      background-color: #ffc107; /* Enquiry yellow */
+    }
